@@ -1,0 +1,39 @@
+body{
+    display: inline-block;
+}
+
+#Top{
+    text-align: center;
+    border: 1px solid black;
+}
+
+#left{
+    float: left;
+    margin: 20px;
+    padding: 215px;
+    border: 1px solid black;
+}
+
+#right{
+    float: right;
+    margin: 20px;
+    padding: 215px;
+    border: 1px solid black;
+}
+
+#body {
+    margin: 5px;
+    padding: 5px;
+    float: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+.ltsi{
+    float: left;
+    font-family: Helvetica;
+}
+
+.lrdc{
+    float: right;
+    font-family: Helvetica;
+}
