@@ -20,7 +20,9 @@ nav{
 }
 
 .logo{
-    height: 30px;
+    position: absolute;
+    left: 5%;
+    top: 2.5%;
     width: 150px;
     cursor: pointer;
 }
@@ -41,7 +43,7 @@ nav ul li{
 
 nav ul li a{
     font-size: 15px;
-    color: #ffffff;
+    color: #000001;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -52,7 +54,7 @@ nav ul li a{
     margin-top: 1%;
     background: url(/LTSI/ltsibanner.svg) no-repeat center center;
     background-size: cover;
-    color: #ffffff;
+    color: #000001;
     height: 40vh;
     display: flex;
     align-items: center;
@@ -62,7 +64,7 @@ nav ul li a{
     display: inline-block;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: #000001;
 }
 
 .inside-content h1{
@@ -73,7 +75,7 @@ nav ul li a{
 .after-content{
     padding-left: 50px;
     margin-top: 1%;
-    color: #ffffff;
+    color: #000001;
     line-height: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -87,15 +89,21 @@ nav ul li a{
     width: 1350px;
 }
 
+.Fleet{
+    padding-left: 13%;
+    justify-content: center;
+    align-items: center;
+}
 .after-content ul li{
     margin: 10px;
     font-size: 14px;
+    padding-left: 35px;
 }
 body{
     letter-spacing: 0.1em;
     line-height: 1.7em;
     text-transform: none;
-    background-image: linear-gradient(#000001,#6B6C6C, #000001);
+    background-image: linear-gradient(#6B6C6C,#e4dddd, #6B6C6C);
 }
 
 /* Styles for screens smaller than 768px (e.g. tablets in portrait orientation) */
