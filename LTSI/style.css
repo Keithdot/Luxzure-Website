@@ -90,14 +90,29 @@ nav ul li a{
 }
 
 .Fleet{
-    padding-left: 13%;
     justify-content: center;
     align-items: center;
+    width: 150px;
 }
 .after-content ul li{
     margin: 10px;
     font-size: 14px;
-    padding-left: 35px;
+}
+
+.contact{
+    background: #b4acac;
+}
+
+.contact h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 body{
     letter-spacing: 0.1em;
@@ -106,8 +121,46 @@ body{
     background-image: linear-gradient(#6B6C6C,#e4dddd, #6B6C6C);
 }
 
+.footer {
+    padding-top: 5px;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+.socialmedia, .contact-info {
+    display: flex;
+    align-items: center; /* Vertically center the icons */
+}
+
+.socialmedia a{
+    margin-right: 50px;
+}
+.contact-info p {
+    margin-right: 50px;
+}
+
+/* Adjust the size of the ion-icon */
+ion-icon {
+    font-size: 10px; /* Adjust the size as needed */
+    color: black;
+}
+
+.copyright{
+    font-size: 6px;
+    text-align: center;
+}
 /* Styles for screens smaller than 768px (e.g. tablets in portrait orientation) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) 
+    {
+        .footer {
+            flex-direction: column; /* Stack elements vertically on smaller screens */
+        }
+        .socialmedia {
+            margin-bottom: 20px; /* Add space between social media icons and contact information on smaller screens */
+        }
     body {
         font-size: 14px;
     }
