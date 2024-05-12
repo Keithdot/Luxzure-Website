@@ -13,23 +13,28 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
 }
 
 .spacer{
-    position: absolute;
     cursor: pointer;
-    left: 1%;
 }
 
 .logo{
+    
     position: absolute;
     left: 5%;
-    top: 2.5%;
+    top: 0;
+    height: auto;
     width: 250px;
     cursor: pointer;
+
 }
 
 nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     text-decoration: none;
     list-style: none;
     width: 100%;
@@ -40,7 +45,7 @@ nav ul{
 nav ul li{
     font-size: larger;
     display: inline-block;
-    margin: 10px 25px;
+    margin: 10px 50px;
 }
 
 nav ul li a{
@@ -114,11 +119,16 @@ nav ul li a{
     align-items: center;
     justify-content: center;
 }
+
+.contact button{
+    justify-content: center;
+    text-align: center;
+}
 body{
     letter-spacing: 0.1em;
     line-height: 1.7em;
     text-transform: none;
-    background-image: linear-gradient(#6B6C6C,#e4dddd, #6B6C6C);
+    background-image: linear-gradient(#ffffff,#6b6b6b, #ffffff);
 }
 
 .footer {
@@ -149,7 +159,7 @@ ion-icon {
 }
 
 .copyright{
-    font-size: 6px;
+    font-size: 10px;
     text-align: center;
 }
 
