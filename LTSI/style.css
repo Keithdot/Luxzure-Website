@@ -169,7 +169,7 @@ ion-icon {
 .about .about-header h1{
     line-height: 80px;
     height: 100%;
-    background: linear-gradient(to right, #19A544,#60BA46);
+    background: linear-gradient(150deg, #19A544,#60BA46);
     width: 100%;
 }
 
@@ -177,6 +177,29 @@ ion-icon {
     padding-left: 175px;
     width: 70%;
     justify-content: center;
+}
+
+.about-wrap .mission-vision-content{
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.about-wrap .mission-vision .mission-vision-content h1{
+    flex:0 0 auto;
+    color: #dbdbdb;
+    text-align: center;
+    line-height: 250px;
+    background: linear-gradient(150deg, #19A544,#60BA46);
+    width: 250px;
+    border: 1px solid #19A544;
+}
+
+.about-wrap .mission-vision .mission-vision-content  p{
+    padding-left: 50px;
+    flex: 0 0 auto;
+    align-content: center;
+    justify-content: center;
+    width: 70%;
 }
 /* Styles for screens smaller than 768px (e.g. tablets in portrait orientation) */
 @media screen and (max-width: 768px) 
