@@ -1,0 +1,120 @@
+/* gallery.html*/
+
+html{
+    font-family: Helvetica;
+    width: auto;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}   
+
+.spacer{
+    cursor: pointer;
+}
+
+.logo{
+    
+    position: absolute;
+    left: 5%;
+    top: 0;
+    height: auto;
+    width: 250px;
+    cursor: pointer;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding-right: 60px;
+}
+
+nav ul li{
+    font-size: larger;
+    display: inline-block;
+    margin: 10px 50px;
+}
+
+nav ul li a{
+    font-size: 15px;
+    color: #000001;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(#ffffff,#6b6b6b, #ffffff);
+}
+
+.slider-wrapper{
+    position: relative;
+}
+
+.slider-wrapper .slide-button{
+    position: absolute;
+    top:50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+
+}
+.container .slider-wrapper .image-list{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.slider-wrapper .image-list .image-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+}
+
+.container .slider-scrollbar{
+    height: 24px;
+    width: 100%;
+    background: red;
+}

@@ -21,14 +21,12 @@ nav{
 }
 
 .logo{
-    
     position: absolute;
     left: 5%;
     top: 0;
     height: auto;
     width: 250px;
     cursor: pointer;
-
 }
 
 nav ul{
@@ -222,6 +220,7 @@ ion-icon {
 hr {
     border: 0.5px solid #6b6b6b; /* Set border color */
 }
+
 /* Styles for screens smaller than 768px (e.g. tablets in portrait orientation) */
 @media screen and (max-width: 768px) 
     {
