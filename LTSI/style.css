@@ -94,18 +94,22 @@ nav ul li a{
     display: flex;
     flex-wrap: wrap;
     width: 1350px;
+    justify-content: center;
+    align-items: center;
 }
 
-.Fleet li h2{
-    width: 200px;
+.Fleet li{
+    width: 300px;
+}
+    
+.Fleet li img{
+    width: 350px;
 }
 .after-content ul li{
+    
+    padding-left: 15px;
     margin: 10px;
     font-size: 14px;
-}
-
-.contact{
-    background: #b4acac;
 }
 
 .contact h1{
@@ -168,6 +172,7 @@ ion-icon {
 .about{
     padding-top: 50px;
     margin-top: 1%;
+    
 }
 .about .about-header{
     color: #dbdbdb;
@@ -175,12 +180,14 @@ ion-icon {
     text-align: center;
     height: 80px;
     width: 25%;
+    
 }
 .about .about-header h1{
     line-height: 80px;
     height: 100%;
     background: linear-gradient(150deg, #19A544,#60BA46);
     width: 100%;
+    border: 1px solid black;
 }
 
 .about .about-content p{
@@ -210,6 +217,10 @@ ion-icon {
     align-content: center;
     justify-content: center;
     width: 70%;
+}
+
+hr {
+    border: 0.5px solid #6b6b6b; /* Set border color */
 }
 /* Styles for screens smaller than 768px (e.g. tablets in portrait orientation) */
 @media screen and (max-width: 768px) 
