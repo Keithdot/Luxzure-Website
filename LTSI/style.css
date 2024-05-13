@@ -110,6 +110,7 @@ nav ul li a{
     font-size: 14px;
 }
 
+
 .contact h1{
     display: flex;
     align-items: center;
@@ -220,6 +221,105 @@ ion-icon {
 hr {
     border: 0.5px solid #6b6b6b; /* Set border color */
 }
+ 
+/* Partner with us section */
+.box{
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.button{
+    font-size: 1em;
+    padding: 15px 35px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background: #6b6b6b;
+    border-radius: 50px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper{
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.wrapper .close{
+    position:absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper .form_content{
+    max-height: 30%;
+    overflow: auto;
+}
+
+/*form design*/
+
+.form_container{
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 20px 0;
+}
+
+form label{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: #413b3b;
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
 
 /* Styles for screens smaller than 768px (e.g. tablets in portrait orientation) */
 @media screen and (max-width: 768px) 
