@@ -120,7 +120,7 @@ nav ul li a{
   .slider-wrapper .image-list {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 18px;
+    gap: 22px;
     font-size: 0;
     list-style: none;
     margin-bottom: 30px;
@@ -133,7 +133,8 @@ nav ul li a{
   }
   
   .slider-wrapper .image-list .image-item {
-    width: 325px;
+    flex: 0 0 auto;
+    width: 330px;
     height: 400px;
     object-fit: cover;
   }
