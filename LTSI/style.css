@@ -320,7 +320,6 @@ input[type=submit]{
     letter-spacing: 3px;
 }
 
-
 /* Styles for screens smaller than 768px (e.g. tablets in portrait orientation) */
 @media screen and (max-width: 768px) 
     {
