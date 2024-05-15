@@ -1,6 +1,7 @@
 console.log("Script loaded")
 document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
+  
 
     // Get form data
     var firstName = document.getElementById('firstName').value;
@@ -21,6 +22,30 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     console.log("Email: " + email);
     console.log("Subject: " + subject);
 
-    // You can also perform a redirect after form submission
-    // window.location.href = 'thankyou.html';
+    document.getElementById('contactForm').submit();
+
+    fetch('send_mail.php', {
+        method: 'POST',
+        body: new FormData(this) // Sends form data
+    })
+    .then(response => {
+        // Handle response from server
+        if (response.ok) {
+            // Form submission successful
+            console.log('Form submitted successfully');
+            // Redirect to another page if needed
+            // window.location.href = 'success.html';
+        } else {
+            // Form submission failed
+            console.error('Form submission failed');
+        }
+    })
+    .catch(error => {
+        // Handle any errors during form submission
+        console.error('Error submitting form:', error);
+        
+    });
+    window.location.href = 'index.html';
 });
+    // You can also perform a redirect after form submission
+    
