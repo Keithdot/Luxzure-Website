@@ -1,3 +1,4 @@
+/*about.html css */
 html{
     font-family: Helvetica;
     width: auto;
@@ -10,10 +11,6 @@ body{
     background-image: linear-gradient(#ffffff,#6b6b6b, #ffffff);
 }
 
-.container{
-    width: 100%;
-    min-height: 100vh;
-}
 nav{
     width: 100%;
     height: 70px;
@@ -22,19 +19,6 @@ nav{
     justify-content: space-around;
     position: relative;
 }
-
-.head{
-    text-align: center;
-    height: 80px;
-    line-height: 5px;
-    width: 45%;
-    font-size: 30px;
-    margin-top: 50px;
-    color: #dbdbdb;
-    border: 1px solid black;
-    background: linear-gradient(150deg, #19A544, #60BA46);
-}
-
 
 .spacer{
     cursor: pointer;
@@ -73,19 +57,31 @@ nav ul li a{
     border-radius: 5px;
 }
 
-.service{
+.head{
+    text-align: center;
+    height: 80px;
+    line-height: 5px;
+    width: 32%;
+    font-size: 30px;
+    margin-top: 50px;
+    color: #dbdbdb;
+    border: 1px solid black;
+    background: linear-gradient(150deg, #19A544, #60BA46);
+}
+
+.about{
     padding-top: 50px;
     margin-top: 1%;
 }
-.service .service-header{
+.about .about-header{
     color: #dbdbdb;
     display: inline-block;
     text-align: center;
     height: 80px;
-    width: 35%;
+    width: 25%;
     
 }
-.service .service-header h1{
+.about .about-header h1{
     line-height: 80px;
     height: 100%;
     background: linear-gradient(150deg, #19A544,#60BA46);
@@ -93,19 +89,14 @@ nav ul li a{
     border: 1px solid black;
 }
 
-.service .service-content ul{
-    padding-top: 30px;
+.about .about-content p{
+    padding-top: 50px;
     padding-left: 175px;
-}
-.service .service-content ul li{
-    font-size: 20px;
     width: 70%;
     justify-content: center;
-    line-height: 50px;
-    list-style:none;
 }
 
-.service .service-content h2{
+.about .about-content h2{
     padding-top: 50px;
     padding-left: 175px;
     width: 70%;
@@ -135,10 +126,6 @@ nav ul li a{
     align-content: center;
     justify-content: center;
     width: 70%;
-}
-
-hr {
-    border: 0.5px solid #6b6b6b; /* Set border color */
 }
 
 .footer {

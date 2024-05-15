@@ -67,6 +67,7 @@ nav ul li a{
     line-height: 1.7em;
     text-transform: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -74,11 +75,13 @@ nav ul li a{
   }
   
   .container {
+    margin-top: 50px;
     padding-left: 50px;
     min-height: 100vh;
     top: 1%;
     max-width: auto;
     width: 95%;
+    flex: 1;
   }
   
   .slider-wrapper {
@@ -186,6 +189,39 @@ nav ul li a{
     bottom: -10px;
   }
   
+  .footer {
+    flex-shrink: 0;
+    padding-top: 5px;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+.socialmedia, .contact-info {
+    display: flex;
+    align-items: center; /* Vertically center the icons */
+}
+
+.socialmedia a{
+    margin-right: 50px;
+}
+.contact-info p {
+    margin-right: 50px;
+}
+
+/* Adjust the size of the ion-icon */
+ion-icon {
+  font-size: 10px; /* Adjust the size as needed */
+  color: black;
+}
+
+.copyright{
+  font-size: 10px;
+  text-align: center;
+}
+
   /* Styles for mobile and tablets */
   @media only screen and (max-width: 1023px) {
     .slider-wrapper .slide-button {
