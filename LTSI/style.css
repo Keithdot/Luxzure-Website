@@ -168,10 +168,21 @@ ion-icon {
 
 /*about.html css */
 
+.head{
+    text-align: center;
+    height: 80px;
+    line-height: 5px;
+    width: 32%;
+    font-size: 30px;
+    margin-top: 50px;
+    color: #dbdbdb;
+    border: 1px solid black;
+    background: linear-gradient(150deg, #19A544, #60BA46);
+}
+
 .about{
     padding-top: 50px;
     margin-top: 1%;
-    
 }
 .about .about-header{
     color: #dbdbdb;
@@ -190,9 +201,19 @@ ion-icon {
 }
 
 .about .about-content p{
+    padding-top: 50px;
     padding-left: 175px;
     width: 70%;
     justify-content: center;
+}
+
+.about .about-content h2{
+    padding-top: 50px;
+    padding-left: 175px;
+    width: 70%;
+    font-weight: normal;
+    justify-content: center;
+    line-height: 40px;
 }
 
 .about-wrap .mission-vision-content{
@@ -225,7 +246,7 @@ hr {
 /* Partner with us section */
 .box{
     padding-top: 20px;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
     text-align: center;
 }
 
