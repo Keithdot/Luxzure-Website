@@ -120,6 +120,9 @@ nav ul li a{
     right: -25px;
   }
   
+  .image-list .image-item{
+    border: 1px solid black;
+  }
   .slider-wrapper .image-list {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
