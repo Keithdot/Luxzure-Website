@@ -85,6 +85,7 @@ nav ul li a{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
 
 }
 .after-content ul{
@@ -268,6 +269,18 @@ input[type=submit]{
 /* Styles for screens smaller than 768px (e.g. tablets in portrait orientation) */
 @media screen and (max-width: 768px) 
     {
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .after-content{
+            width: 100%;
+            padding: 0;
+        }
+
+        .after-content ul{
+            width: 100%;
+        }
         .footer {
             flex-direction: column; /* Stack elements vertically on smaller screens */
         }
@@ -280,32 +293,36 @@ input[type=submit]{
 
     nav {
         flex-direction: column;
-    }
-
-    nav a {
-        padding: 0.5rem;
-    }
-}
-
-/* Styles for screens smaller than 480px (e.g. mobile phones) */
-@media screen and (max-width: 479px) {
-    body {
-        font-size: 14px;
-    }
-
-    .logo{
-        padding-left: 10px;
-    }
-    nav {
+        height: auto;
+      }
+      nav ul {
         flex-direction: column;
+        padding-right: 0;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      nav ul li a {
+        font-size: 12px;
+      }
+    .Fleet{
+        padding: 0;
+        margin: 0;
     }
-
-    nav a {
-        padding: 0.1rem;
+    .Fleet li {
+        width: 100%;
+      }
+    .Fleet .fleet_image_desc{
+        padding: 0;
     }
-
-    h1 {
-        font-size: 2rem;
-        margin-top: 1rem;
-    }
+      .Fleet li h2 {
+        font-size: 20px;
+      }
+    
+      .Fleet li p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 100%;
+      }
 }

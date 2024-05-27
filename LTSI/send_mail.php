@@ -2,10 +2,10 @@
 
 if(!empty($_POST['subject']))
 {
-    $firstName = $_POST["subject"];
-    $lastName = $_POST["subject"];
+    $firstName = $_POST["firstName"];
+    $lastName = $_POST["lastName"];
     $subject = $_POST["subject"];
-    $email = $_POST["subject"];
+    $email = $_POST["email"];
 
     $toEmail = $_POST["kitchua12@gmail.com"];
 
